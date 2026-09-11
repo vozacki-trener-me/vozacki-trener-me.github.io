@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#075d55">
+  <meta name="description" content="Интерактивный тренажёр по вопросам водительского экзамена в Черногории">
+  <title>Vozački trener — подготовка к экзамену</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand"><span class="logo">✓</span><div><strong>Vozački trener</strong><small><span id="question-count">356</span> отдельных вопросов</small></div></div>
+      <div class="language" aria-label="Язык">
+        <button data-lang="cnr">Crnogorski</button><button class="active" data-lang="ru">Русский</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="summary">
+      <div class="progress-card"><div class="progress-copy"><strong id="progress-label">Вопрос 1 из 356</strong><span id="page-label">Лист источника 1</span></div><div class="track"><i id="progress"></i></div></div>
+      <div class="score"><div><b id="correct">0</b><small>Верно</small></div><div><b id="wrong">0</b><small>Ошибки</small></div><div><b id="percent">0%</b><small>Результат</small></div></div>
+    </section>
+    <div class="layout">
+      <section class="quiz-card">
+        <div class="eyebrow" id="language-label">◎ Готовый русский перевод</div>
+        <h1 id="question">Загрузка вопросов…</h1>
+        <div id="diagram" class="diagram" hidden><img id="diagram-img" alt="Фрагмент экзаменационного листа"><span id="diagram-cover"></span></div>
+        <div id="options" class="options" role="radiogroup" aria-label="Варианты ответа"></div>
+        <div id="feedback" class="feedback" hidden></div>
+        <div class="actions"><button id="primary" class="primary" disabled>Проверить ответ</button></div>
+      </section>
+      <aside>
+        <section class="side-card"><h2>Режим тренировки</h2><p>Ответ открывается после проверки. Счёт сохраняется до перезапуска теста.</p><button id="shuffle">↝ Перемешать вопросы</button><button id="reset">↻ Сбросить результат</button></section>
+        <details class="side-card"><summary>▣ Источник вопроса</summary><div class="source"><img id="source-img" alt="Исходный фрагмент"><span id="source-cover"></span></div></details>
+        <p class="note">Текст и перевод подготовлены заранее. Для вопросов со схемами сверяйтесь с исходным фрагментом.</p>
+      </aside>
+    </div>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
