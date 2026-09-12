@@ -1,0 +1,12 @@
+/* The source snippets contain the illustration on the left and duplicate
+   question text on the right. The quiz card enlarges only the illustration;
+   the complete source remains available in the sidebar. */
+.diagram img {
+  display: block;
+  width: 235%;
+  max-width: none;
+}
+
+.diagram span {
+  display: none;
+}
