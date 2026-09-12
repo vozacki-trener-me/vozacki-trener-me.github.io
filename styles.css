@@ -51,7 +51,9 @@ h1{font-size:24px;line-height:1.4;margin:0}
 .feedback.good{background:#ecfdf5;color:#064e3b}
 .feedback.bad{background:#fff1f2;color:#881337}
 .feedback strong{display:block}
-.actions{display:flex;justify-content:flex-end;margin-top:24px}
+.actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin-top:24px}
+.secondary{border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);padding:10px 14px;cursor:pointer}
+.secondary:hover{background:#f8fafc}
 .primary{border:0;border-radius:10px;background:var(--teal);color:#fff;padding:11px 18px;cursor:pointer}
 .primary:disabled{opacity:.45;cursor:not-allowed}
 aside{display:grid;gap:16px}
@@ -79,3 +81,19 @@ h1{font-size:20px}
 .language{width:100%;display:grid;grid-template-columns:repeat(4,1fr)}
 .language button{padding:6px 5px;font-size:12px}
 }
+#analysis-dialog{width:min(1000px,calc(100% - 32px));height:min(88vh,900px);padding:0;border:1px solid var(--line);border-radius:20px;background:#fff;color:var(--ink);box-shadow:0 24px 80px rgba(15,23,42,.28)}
+#analysis-dialog::backdrop{background:rgba(15,23,42,.58);backdrop-filter:blur(3px)}
+.analysis-shell{height:100%;display:grid;grid-template-rows:auto auto 1fr}
+.analysis-header{position:static;display:flex;align-items:start;justify-content:space-between;padding:22px 24px 12px;border:0}
+.analysis-header h2{margin:0;font-size:24px}
+.analysis-header p{margin:3px 0 0;color:var(--muted)}
+.icon-button{border:0;background:#f1f5f9;border-radius:50%;width:38px;height:38px;font-size:26px;line-height:1;cursor:pointer}
+.analysis-tools{display:flex;gap:10px;padding:0 24px 16px}
+.analysis-tools input{min-width:0;flex:1;border:1px solid var(--line);border-radius:10px;padding:11px 13px;font:inherit}
+.analysis-list{overflow:auto;padding:0 24px 28px;display:grid;gap:12px}
+.analysis-item{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.analysis-item h3{font-size:16px;line-height:1.45;margin:0 0 8px}
+.analysis-item ol{margin:0;padding-left:29px;color:#334155}
+.analysis-item li{padding:2px 0}
+.analysis-correct{color:var(--green);font-weight:700}
+@media(max-width:600px){.analysis-tools{flex-direction:column}.analysis-header,.analysis-tools,.analysis-list{padding-left:16px;padding-right:16px}.actions>*{flex:1}}
