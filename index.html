@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="header-inner">
-      <div class="brand"><span class="logo">✓</span><div><strong>Vozački trener</strong><small><span id="question-count">356</span> отдельных вопросов</small></div></div>
+      <div class="brand"><span class="logo">✓</span><div><strong>Vozački trener</strong><small id="question-count-label"><span id="question-count">356</span> отдельных вопросов</small></div></div>
       <div class="language" aria-label="Язык вопроса">
         <button data-lang="cnr">Crnogorski</button><button class="active" data-lang="ru">Русский</button><button data-lang="en">English</button><button data-lang="de">Deutsch</button>
       </div>
@@ -21,7 +21,7 @@
   <main>
     <section class="summary">
       <div class="progress-card"><div class="progress-copy"><strong id="progress-label">Вопрос 1 из 356</strong><span id="page-label">Лист источника 1</span></div><div class="track"><i id="progress"></i></div></div>
-      <div class="score"><div><b id="correct">0</b><small>Верно</small></div><div><b id="wrong">0</b><small>Ошибки</small></div><div><b id="percent">0%</b><small>Результат</small></div></div>
+      <div class="score"><div><b id="correct">0</b><small id="correct-label">Верно</small></div><div><b id="wrong">0</b><small id="wrong-label">Ошибки</small></div><div><b id="percent">0%</b><small id="result-label">Результат</small></div></div>
     </section>
     <div class="layout">
       <section class="quiz-card">
@@ -33,9 +33,9 @@
         <div class="actions"><button id="primary" class="primary" disabled>Проверить ответ</button></div>
       </section>
       <aside>
-        <section class="side-card"><h2>Режим тренировки</h2><p id="mode-description">Вариант собирается из четырёх частей исходного теста. Новый вариант не сбрасывает накопленный результат.</p><label class="mode-label" for="category">Категория</label><select id="category"><option value="all">Все категории</option><option value="images">Только с картинками</option><option value="rules">Правила движения</option><option value="situations">Дорожные ситуации</option><option value="signs">Дорожные знаки</option><option value="safety">Автомобиль и первая помощь</option></select><label class="mode-label">Набор вопросов</label><div class="answer-mode" aria-label="Набор вопросов"><button data-question-mode="all">Все вопросы</button><button class="active" data-question-mode="exam">Экзамен</button></div><label class="mode-label">Порядок ответов</label><div class="answer-mode" aria-label="Порядок ответов"><button data-answer-mode="ticket">Как в билетах</button><button class="active" data-answer-mode="random">Случайно</button></div><button id="new-set">✦ Собрать новый экзамен</button><button id="reset">↻ Сбросить результат</button></section>
-        <details class="side-card"><summary>▣ Источник вопроса</summary><div class="source"><img id="source-img" alt="Исходный фрагмент"><span id="source-cover"></span></div></details>
-        <p class="note">Официальный экзамен длится 60 минут; для сдачи требуется не менее 85% баллов. Здесь процент считается по числу правильных ответов.</p>
+        <section class="side-card"><h2 id="training-title">Режим тренировки</h2><p id="mode-description">Вариант собирается из четырёх частей исходного теста. Новый вариант не сбрасывает накопленный результат.</p><label class="mode-label" id="category-label" for="category">Категория</label><select id="category"><option value="all">Все категории</option><option value="images">Только с картинками</option><option value="rules">Правила движения</option><option value="situations">Дорожные ситуации</option><option value="signs">Дорожные знаки</option><option value="safety">Автомобиль и первая помощь</option></select><label class="mode-label" id="set-label">Набор вопросов</label><div class="answer-mode" id="question-mode" aria-label="Набор вопросов"><button data-question-mode="all">Все вопросы</button><button class="active" data-question-mode="exam">Экзамен</button></div><label class="mode-label" id="answer-order-label">Порядок ответов</label><div class="answer-mode" id="answer-mode" aria-label="Порядок ответов"><button data-answer-mode="ticket">Как в билетах</button><button class="active" data-answer-mode="random">Случайно</button></div><button id="new-set">✦ Собрать новый экзамен</button><button id="reset">↻ Сбросить результат</button></section>
+        <details class="side-card"><summary id="source-title">▣ Источник вопроса</summary><div class="source"><img id="source-img" alt="Исходный фрагмент"><span id="source-cover"></span></div></details>
+        <p class="note" id="exam-note">Официальный экзамен длится 60 минут; для сдачи требуется не менее 85% баллов. Здесь процент считается по числу правильных ответов.</p>
       </aside>
     </div>
   </main>
