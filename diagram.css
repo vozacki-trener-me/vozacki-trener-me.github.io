@@ -10,3 +10,8 @@
 .diagram span {
   display: none;
 }
+
+.diagram.photo-only img { width: 100%; }
+.eyebrow { display: flex; justify-content: space-between; gap: 16px; }
+#question-id { color: #64748b; letter-spacing: normal; white-space: nowrap; }
+#category { width: 100%; padding: 10px 34px 10px 11px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); font: inherit; }
