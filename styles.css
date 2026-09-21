@@ -89,6 +89,7 @@ h1{font-size:20px}
 .analysis-header p{margin:3px 0 0;color:var(--muted)}
 .icon-button{border:0;background:#f1f5f9;border-radius:50%;width:38px;height:38px;font-size:26px;line-height:1;cursor:pointer}
 .analysis-tools{display:flex;gap:10px;padding:0 24px 16px}
+.analysis-tools select{border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 32px 10px 12px;font:inherit;color:var(--ink)}
 .analysis-tools input{min-width:0;flex:1;border:1px solid var(--line);border-radius:10px;padding:11px 13px;font:inherit}
 .analysis-list{overflow:auto;padding:0 24px 28px;display:grid;gap:12px}
 .analysis-item{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
