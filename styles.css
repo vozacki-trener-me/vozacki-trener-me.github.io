@@ -50,6 +50,7 @@ h1{font-size:24px;line-height:1.4;margin:0}
 .feedback{margin-top:20px;border-radius:16px;padding:15px}
 .feedback.good{background:#ecfdf5;color:#064e3b}
 .feedback.bad{background:#fff1f2;color:#881337}
+.feedback.issue{background:#fffbeb;color:#78350f}
 .feedback strong{display:block}
 .actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin-top:24px}
 .secondary{border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);padding:10px 14px;cursor:pointer}
@@ -95,6 +96,7 @@ h1{font-size:20px}
 .analysis-item{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
 .analysis-item h3{font-size:16px;line-height:1.45;margin:0 0 8px}
 .analysis-image{display:block;width:auto;max-width:100%;max-height:360px;height:auto;object-fit:contain;margin:12px 0;border-radius:10px}
+.analysis-issue{margin:10px 0;padding:10px 12px;border-radius:10px;background:#fffbeb;color:#78350f}
 .analysis-item ol{margin:0;padding-left:29px;color:#334155}
 .analysis-item li{padding:2px 0}
 .analysis-correct{color:var(--green);font-weight:700}
