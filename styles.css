@@ -94,6 +94,7 @@ h1{font-size:20px}
 .analysis-list{overflow:auto;padding:0 24px 28px;display:grid;gap:12px}
 .analysis-item{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
 .analysis-item h3{font-size:16px;line-height:1.45;margin:0 0 8px}
+.analysis-image{display:block;width:auto;max-width:100%;max-height:360px;height:auto;object-fit:contain;margin:12px 0;border-radius:10px}
 .analysis-item ol{margin:0;padding-left:29px;color:#334155}
 .analysis-item li{padding:2px 0}
 .analysis-correct{color:var(--green);font-weight:700}
