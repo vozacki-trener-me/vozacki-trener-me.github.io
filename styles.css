@@ -100,4 +100,7 @@ h1{font-size:20px}
 .analysis-item ol{margin:0;padding-left:29px;color:#334155}
 .analysis-item li{padding:2px 0}
 .analysis-correct{color:var(--green);font-weight:700}
+.analysis-source{margin-top:14px}
+.analysis-source summary{color:var(--teal)}
+.analysis-source img{display:block;width:100%;height:auto;margin-top:10px;border:1px solid var(--line);border-radius:10px}
 @media(max-width:600px){.analysis-tools{flex-direction:column}.analysis-header,.analysis-tools,.analysis-list{padding-left:16px;padding-right:16px}.actions>*{flex:1}}
