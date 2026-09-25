@@ -84,7 +84,7 @@ h1{font-size:20px}
 }
 #analysis-dialog{width:min(1000px,calc(100% - 32px));height:min(88vh,900px);padding:0;border:1px solid var(--line);border-radius:20px;background:#fff;color:var(--ink);box-shadow:0 24px 80px rgba(15,23,42,.28)}
 #analysis-dialog::backdrop{background:rgba(15,23,42,.58);backdrop-filter:blur(3px)}
-.analysis-shell{height:100%;display:grid;grid-template-rows:auto auto 1fr}
+.analysis-shell{height:100%;display:flex;flex-direction:column}
 .analysis-header{position:static;display:flex;align-items:start;justify-content:space-between;padding:22px 24px 12px;border:0}
 .analysis-header h2{margin:0;font-size:24px}
 .analysis-header p{margin:3px 0 0;color:var(--muted)}
@@ -92,7 +92,11 @@ h1{font-size:20px}
 .analysis-tools{display:flex;gap:10px;padding:0 24px 16px}
 .analysis-tools select{border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 32px 10px 12px;font:inherit;color:var(--ink)}
 .analysis-tools input{min-width:0;flex:1;border:1px solid var(--line);border-radius:10px;padding:11px 13px;font:inherit}
-.analysis-list{overflow:auto;padding:0 24px 28px;display:grid;gap:12px}
+.analysis-history-tools{display:flex;align-items:center;gap:12px;padding:0 24px 16px}
+.analysis-history-tools[hidden]{display:none}
+.analysis-history-tools label{font-size:14px;font-weight:650;white-space:nowrap}
+.analysis-history-tools select{min-width:0;max-width:100%;border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 12px;font:inherit;color:var(--ink)}
+.analysis-list{flex:1;min-height:0;overflow:auto;padding:0 24px 28px;display:grid;align-content:start;gap:12px}
 .analysis-item{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
 .analysis-item h3{font-size:16px;line-height:1.45;margin:0 0 8px}
 .analysis-image{display:block;width:auto;max-width:100%;max-height:360px;height:auto;object-fit:contain;margin:12px 0;border-radius:10px}
@@ -103,4 +107,4 @@ h1{font-size:20px}
 .analysis-source{margin-top:14px}
 .analysis-source summary{color:var(--teal)}
 .analysis-source img{display:block;width:100%;height:auto;margin-top:10px;border:1px solid var(--line);border-radius:10px}
-@media(max-width:600px){.analysis-tools{flex-direction:column}.analysis-header,.analysis-tools,.analysis-list{padding-left:16px;padding-right:16px}.actions>*{flex:1}}
+@media(max-width:600px){.analysis-tools,.analysis-history-tools{flex-direction:column;align-items:stretch}.analysis-header,.analysis-tools,.analysis-history-tools,.analysis-list{padding-left:16px;padding-right:16px}.actions>*{flex:1}}
